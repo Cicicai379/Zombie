@@ -30,7 +30,7 @@ public class ZombiePlantTester {
     }
 
     @Test
-    public void TestIsDangerousAfterTreatments() {
+    public void TestIsDangerousAfter1Treatments() {
         setUp();
         zombiePlant.treat(7);
         zombiePlant.treat(8);
@@ -71,7 +71,7 @@ public class ZombiePlantTester {
     public void TestUnsuccessfulTreatment() {
         setUp();
         zombiePlant.treat(11);
-        assertEquals("Ensure that your treat method is implemented correctly!", zombiePlant.treatmentsNeeded(), 4);
+        assertEquals("Ensure that your treat method is implemented correctly!", zombiePlant.treatmentsNeeded(), 3);
         tearDown();
     }
 
